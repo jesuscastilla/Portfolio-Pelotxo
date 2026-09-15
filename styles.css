@@ -46,12 +46,18 @@ body {
     margin-bottom: 40px;
 }
 
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+}
+
 .main-nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 20px;
 }
 
 .main-nav a {
@@ -63,6 +69,22 @@ body {
 
 .main-nav a.active, .main-nav a:hover {
     color: var(--text-main);
+}
+
+.lang-switch {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.lang-switch .separator {
+    color: var(--border);
+    font-size: 0.9rem;
+}
+
+.lang-switch a {
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
 /* Disclaimer / Intro */
