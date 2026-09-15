@@ -57,13 +57,13 @@ Se incluyen enlaces y vías de contacto directos:
 
 ## Despliegue en el NAS (Instrucciones)
 
-Este proyecto está diseñado para alojarse en el NAS Synology de Jesús (`pelotxo.synology.me`), utilizando **Web Station** (Nginx/Apache). No requiere de un proxy inverso complejo en este momento, ya que el dominio dedicado se adquirirá más adelante. 
+Este proyecto está diseñado para alojarse en el NAS Synology de Jesús (`pelotxo.synology.me`), utilizando **Web Station** (Nginx/Apache). El dominio dedicado es `corrientelebeche.es` (ver `LEBECHE/docs/GUIA_DOMINIO_CORRIENTELEBECHE.md`).
 
 ### Pasos de despliegue local manual (Red interna)
 1. Acceder al NAS a través de la red local mediante SMB: `\\192.168.50.94\web\` (o la ruta correspondiente al volumen web).
 2. Crear la carpeta `/Portfolio/` (o copiar la carpeta `Portfolio-Pelotxo` entera) dentro de la carpeta compartida web.
 3. Copiar el contenido (`index.html`, `contacto.html`, `styles.css`) en dicha carpeta.
-4. El servidor Web Station servirá directamente el contenido HTML a través de la IP local o del dominio de Synology en el subdirectorio correspondiente (p.ej. `https://pelotxo.synology.me/portfolio`).
+4. El servidor Web Station servirá directamente el contenido HTML a través de la IP local o del dominio en el subdirectorio correspondiente (p.ej. `https://corrientelebeche.es/portfolio/`).
 
 ---
 
