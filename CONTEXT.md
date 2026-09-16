@@ -18,8 +18,8 @@ Queda explícitamente reflejado en la web que la programación es un **hobby y u
 - **Tipo de proyecto:** Web estática clásica (HTML5, CSS3, Vanilla JS si fuera necesario).
 - **Enfoque técnico:** Sin frameworks (cero dependencias, ni npm, ni compilación). Diseñado para máxima simplicidad, compatibilidad y facilidad de despliegue.
 - **Estilos (`styles.css`):**
-  - Estilo formal, sobrio y profesional.
-  - Paleta de colores basada en tonos corporativos (azul marino, gris, blanco, y acentos en azul claro `#3498db`).
+  - Estilo formal, sobrio y profesional, alineado con la identidad de Lebeche.
+  - Paleta: papel crema (`#F5F5F0`), tinta (`#141414`), acentos azul marino (`#041E2B`) y ámbar (`#E8A33D`). Tipografías Inter (cuerpo) y Playfair Display (títulos).
   - Diseño totalmente *responsive* (Grid y Flexbox).
 
 ---

@@ -1,152 +1,221 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Programación - Jesús Castilla">
-    <title>Jesús Castilla | Software Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de programación de Jesús Castilla — desarrollador de software por vocación. Proyectos en Android, web, iOS, backend y sistemas.">
+  <title>Jesús Castilla | Desarrollador de Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="container">
-            <h1>Jesús Castilla</h1>
-            <p class="subtitle">Software Developer</p>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" class="active">Proyectos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-                <div class="lang-switch">
-                    <a href="index.html" class="active">ES</a>
-                    <span class="separator">/</span>
-                    <a href="index-en.html">EN</a>
-                </div>
-            </nav>
+  <header class="cabecera" id="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a class="marca" href="index.html">
+        <span class="marca__logo">JC</span>
+        <span class="marca__texto">Jesús Castilla</span>
+      </a>
+      <nav class="menu" id="menu">
+        <a href="index.html" class="activo">Proyectos</a>
+        <a href="contacto.html">Contacto</a>
+        <span class="menu__separador" aria-hidden="true"></span>
+        <a href="index.html" class="idioma activo">ES</a>
+        <a href="index-en.html" class="idioma">EN</a>
+      </nav>
+      <button class="menu__boton" id="botonMenu" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="contenedor hero__interior">
+      <span class="hero__sobre">Desarrollador de Software</span>
+      <h1>Jesús Castilla</h1>
+      <p class="hero__bajada">Construyo aplicaciones y servicios que resuelven problemas reales, con código limpio y sin dependencias innecesarias.</p>
+      <div class="hero__acciones">
+        <a class="boton boton--ambar" href="#proyectos">Ver proyectos</a>
+        <a class="boton boton--fantasma" href="contacto.html">Contactar</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="contenedor">
+    <section class="declaracion aparecer">
+      <span class="declaracion__etiqueta">Hobby &amp; vocación</span>
+      <p>El desarrollo de software es para mí una vocación y un <strong>hobby</strong>. Los proyectos presentados a continuación nacen de la curiosidad técnica y el afán por aprender, <strong>sin ningún fin lucrativo ni modelo de negocio</strong>. Mi único objetivo es aportar valor a través del código y solucionar problemas reales.</p>
+    </section>
+
+    <section class="seccion" id="proyectos">
+      <h2 class="seccion__titulo">Proyectos por tecnología</h2>
+      <p class="seccion__intro">Una selección del trabajo que he desarrollado a lo largo de los años, agrupado por lenguaje y plataforma.</p>
+<div class="grupo aparecer">
+        <div class="grupo__cabecera">
+          <h3 class="grupo__titulo">Kotlin &amp; Android</h3>
+          <span class="grupo__etiqueta">Nativo</span>
+          <p class="grupo__texto">Desarrollo nativo con Jetpack Compose, CameraX y WorkManager.</p>
         </div>
-    </header>
-
-    <main class="container">
-        <section class="intro-section">
-            <p class="disclaimer">
-                El desarrollo de software es para mí una vocación y un <strong>hobby</strong>. 
-                Los proyectos presentados a continuación nacen de la curiosidad técnica y el afán por aprender, 
-                <strong>sin ningún fin lucrativo ni modelo de negocio</strong>. Mi único objetivo es aportar valor 
-                a través del código y solucionar problemas reales.
-            </p>
-        </section>
-
-        <section class="skills-section">
-            <h2>Proyectos por Tecnología</h2>
-            
-            <div class="language-group">
-                <h3>Kotlin & Android</h3>
-                <p>Desarrollo nativo utilizando Jetpack Compose, CameraX y WorkManager.</p>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80" alt="Smartphone interface mockup" class="project-img">
-                        <h4>App Barrioteca (Android v2)</h4>
-                        <p>Aplicación 100% nativa (Compose). Gestión de préstamos, escáner de códigos de barras integrado, login local y sincronización desatendida.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/jesuscastilla/acalenca-barrioteca-app-android-v2" target="_blank" rel="noopener">Código en GitHub</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1506784951209-4522a01d4ddf?w=600&q=80" alt="Calendar interface" class="project-img">
-                        <h4>Calendario Lebeche</h4>
-                        <p>Cliente CalDAV nativo con sincronización bidireccional. Manejo de alarmas, eventos recurrentes y delegación al calendario del sistema.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/jesuscastilla/calendario-lebeche" target="_blank" rel="noopener">Código en GitHub</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80" alt="Interfaz de teléfono móvil" class="tarjeta__img" loading="lazy">
+            <div class="tarjeta__cuerpo">
+              <h4 class="tarjeta__titulo">App Barrioteca (Android v2)</h4>
+              <p class="tarjeta__texto">Aplicación 100% nativa en Compose: gestión de préstamos, escáner de códigos de barras integrado, inicio de sesión local y sincronización desatendida.</p>
+              <div class="tarjeta__enlaces">
+                <a class="enlace enlace--codigo" href="https://github.com/jesuscastilla/acalenca-barrioteca-app-android-v2" target="_blank" rel="noopener">Código en GitHub</a>
+              </div>
             </div>
-
-            <div class="language-group">
-                <h3>TypeScript, React & Frontend</h3>
-                <p>Single Page Applications estables, enfocadas en rendimiento y neutralización de cachés residuales.</p>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Code on screen" class="project-img">
-                        <h4>Barrioteca (Web/PWA)</h4>
-                        <p>Frontend con React 19, Vite y Tailwind. Diseñado para ofrecer interacción instantánea sin service workers persistentes que rompan la actualización.</p>
-                        <div class="project-links">
-                            <a href="https://www.corrientelebeche.es/barrioteca/" target="_blank" rel="noopener">App en Vivo</a>
-                            <a href="https://github.com/jesuscastilla/acalenca-barrioteca-app" target="_blank" rel="noopener">Código en GitHub</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80" alt="Web browser" class="project-img">
-                        <h4>Web Oficial Lebeche</h4>
-                        <p>Plataforma puramente estática e indexable, alimentada por archivos JSON. Rápida, fácil de hospedar y mantener sin CMS pesados.</p>
-                        <div class="project-links">
-                            <a href="https://lebeche.www.corrientelebeche.es/" target="_blank" rel="noopener">Sitio en Vivo</a>
-                            <a href="https://github.com/jesuscastilla/LEBECHE" target="_blank" rel="noopener">Código en GitHub</a>
-                        </div>
-                    </div>
-                </div>
+          </article>
+          <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1506784951209-4522a01d4ddf?w=600&q=80" alt="Interfaz de calendario" class="tarjeta__img" loading="lazy">
+            <div class="tarjeta__cuerpo">
+              <h4 class="tarjeta__titulo">Calendario Lebeche</h4>
+              <p class="tarjeta__texto">Cliente CalDAV nativo con sincronización bidireccional, manejo de alarmas, eventos recurrentes y delegación al calendario del sistema.</p>
+              <div class="tarjeta__enlaces">
+                <a class="enlace enlace--codigo" href="https://github.com/jesuscastilla/calendario-lebeche" target="_blank" rel="noopener">Código en GitHub</a>
+              </div>
             </div>
-
-            <div class="language-group">
-                <h3>Swift & iOS</h3>
-                <p>Implementación de ecosistemas Apple para complementar servicios web.</p>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?w=600&q=80" alt="iPhone" class="project-img">
-                        <h4>Barrioteca (iOS Wrapper)</h4>
-                        <p>Cascarón nativo (WKWebView, SwiftUI) que expone funciones de cámara (sideloading) para interactuar fluidamente con la PWA interna.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/jesuscastilla/acalenca-barrioteca-app-ios" target="_blank" rel="noopener">Código en GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="language-group">
-                <h3>PHP & Backend</h3>
-                <p>Construcción y adaptación de infraestructura de datos y APIs REST.</p>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80" alt="Servers in rack" class="project-img">
-                        <h4>Backend Barrioteca (SLiMS)</h4>
-                        <p>Modificación estructural de SLiMS (PHP 8, MariaDB) con proxies a medida, scripts de importación de ISBN y consultas automáticas a Google Books.</p>
-                        <div class="project-links">
-                            <a href="https://www.corrientelebeche.es/slims/" target="_blank" rel="noopener">Panel en Vivo</a>
-                            <a href="https://github.com/jesuscastilla/acalenca-barrioteca" target="_blank" rel="noopener">Código en GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="language-group">
-                <h3>Linux & Sistemas</h3>
-                <p>Administración de servidores, redes y entornos Unix.</p>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=600&q=80" alt="Terminal window" class="project-img">
-                        <h4>DiplodocOS</h4>
-                        <p>Distribución de sistema operativo construida desde cero basada en Ubuntu. Enfoque absoluto en la simplicidad y la usabilidad para nuevos usuarios.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/jesuscastilla/DiplodocOS" target="_blank" rel="noopener">Código en GitHub</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="Hardware chip" class="project-img">
-                        <h4>Infraestructura NAS</h4>
-                        <p>Host local auto-gestionado. Reglas Nginx, encriptación, y proxies inversos para servir múltiples proyectos desde un Synology Web Station.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <p>Jesús Castilla. Desarrollado como proyecto personal no comercial.</p>
+          </article>
         </div>
-    </footer>
+      </div>
+
+      <div class="grupo aparecer">
+        <div class="grupo__cabecera">
+          <h3 class="grupo__titulo">TypeScript, React &amp; Frontend</h3>
+          <span class="grupo__etiqueta">Web</span>
+          <p class="grupo__texto">Single Page Applications estables, enfocadas en rendimiento y neutralización de cachés residuales.</p>
+        </div>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Código en pantalla" class="tarjeta__img" loading="lazy">
+            <div class="tarjeta__cuerpo">
+              <h4 class="tarjeta__titulo">Barrioteca (Web/PWA)</h4>
+              <p class="tarjeta__texto">Frontend con React 19, Vite y Tailwind. Diseñado para ofrecer interacción instantánea sin service workers persistentes que rompan la actualización.</p>
+              <div class="tarjeta__enlaces">
+                <a class="enlace enlace--vivo" href="https://www.corrientelebeche.es/barrioteca/" target="_blank" rel="noopener">App en vivo</a>
+                <a class="enlace enlace--codigo" href="https://github.com/jesuscastilla/acalenca-barrioteca-app" target="_blank" rel="noopener">Código en GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80" alt="Navegador web" class="tarjeta__img" loading="lazy">
+            <div class="tarjeta__cuerpo">
+              <h4 class="tarjeta__titulo">Web Oficial Lebeche</h4>
+              <p class="tarjeta__texto">Plataforma puramente estática e indexable, alimentada por archivos JSON. Rápida, fácil de hospedar y mantener sin CMS pesados.</p>
+              <div class="tarjeta__enlaces">
+                <a class="enlace enlace--vivo" href="https://www.corrientelebeche.es/lebeche/" target="_blank" rel="noopener">Sitio en vivo</a>
+                <a class="enlace enlace--codigo" href="https://github.com/jesuscastilla/LEBECHE" target="_blank" rel="noopener">Código en GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+<div class="grupo aparecer">
+        <div class="grupo__cabecera">
+          <h3 class="grupo__titulo">Swift &amp; iOS</h3>
+          <span class="grupo__etiqueta">Apple</span>
+          <p class="grupo__texto">Implementación de ecosistemas Apple para complementar servicios web.</p>
+        </div>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?w=600&q=80" alt="iPhone" class="tarjeta__img" loading="lazy">
+            <div class="tarjeta__cuerpo">
+              <h4 class="tarjeta__titulo">Barrioteca (iOS Wrapper)</h4>
+              <p class="tarjeta__texto">Cascarón nativo (WKWebView, SwiftUI) que expone funciones de cámara para interactuar fluidamente con la PWA interna.</p>
+              <div class="tarjeta__enlaces">
+                <a class="enlace enlace--codigo" href="https://github.com/jesuscastilla/acalenca-barrioteca-app-ios" target="_blank" rel="noopener">Código en GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="grupo aparecer">
+        <div class="grupo__cabecera">
+          <h3 class="grupo__titulo">PHP &amp; Backend</h3>
+          <span class="grupo__etiqueta">Servidor</span>
+          <p class="grupo__texto">Construcción y adaptación de infraestructura de datos y APIs REST.</p>
+        </div>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80" alt="Servidores en rack" class="tarjeta__img" loading="lazy">
+            <div class="tarjeta__cuerpo">
+              <h4 class="tarjeta__titulo">Backend Barrioteca (SLiMS)</h4>
+              <p class="tarjeta__texto">Modificación estructural de SLiMS (PHP 8, MariaDB) con proxies a medida, scripts de importación de ISBN y consultas automáticas a Google Books.</p>
+              <div class="tarjeta__enlaces">
+                <a class="enlace enlace--vivo" href="https://www.corrientelebeche.es/slims/" target="_blank" rel="noopener">Panel en vivo</a>
+                <a class="enlace enlace--codigo" href="https://github.com/jesuscastilla/acalenca-barrioteca" target="_blank" rel="noopener">Código en GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="grupo aparecer">
+        <div class="grupo__cabecera">
+          <h3 class="grupo__titulo">Linux &amp; Sistemas</h3>
+          <span class="grupo__etiqueta">Infraestructura</span>
+          <p class="grupo__texto">Administración de servidores, redes y entornos Unix.</p>
+        </div>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=600&q=80" alt="Ventana de terminal" class="tarjeta__img" loading="lazy">
+            <div class="tarjeta__cuerpo">
+              <h4 class="tarjeta__titulo">DiplodocOS</h4>
+              <p class="tarjeta__texto">Distribución de sistema operativo construida desde cero basada en Ubuntu. Enfoque absoluto en la simplicidad y la usabilidad para nuevos usuarios.</p>
+              <div class="tarjeta__enlaces">
+                <a class="enlace enlace--codigo" href="https://github.com/jesuscastilla/DiplodocOS" target="_blank" rel="noopener">Código en GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="Chip de hardware" class="tarjeta__img" loading="lazy">
+            <div class="tarjeta__cuerpo">
+              <h4 class="tarjeta__titulo">Infraestructura NAS</h4>
+              <p class="tarjeta__texto">Host local autogestionado: reglas Nginx, cifrado y proxies inversos para servir múltiples proyectos desde un Synology Web Station.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__interior">
+        <div class="pie__marca">
+          <span class="marca__logo">JC</span>
+          <span>Jesús Castilla</span>
+        </div>
+        <nav class="pie__enlaces">
+          <a href="index.html">Proyectos</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="https://github.com/jesuscastilla" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/jesuscastillalacal" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+      </div>
+      <p class="pie__fin">Jesús Castilla · Desarrollado como proyecto personal no comercial.</p>
+    </div>
+  </footer>
+
+  <script>
+    const botonMenu = document.getElementById('botonMenu');
+    const menu = document.getElementById('menu');
+    botonMenu.addEventListener('click', () => {
+      const abierto = menu.classList.toggle('abierto');
+      botonMenu.classList.toggle('activo', abierto);
+      botonMenu.setAttribute('aria-expanded', String(abierto));
+    });
+    const observador = new IntersectionObserver((entradas) => {
+      entradas.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observador.unobserve(e.target); }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.aparecer').forEach((el) => observador.observe(el));
+  </script>
 </body>
 </html>
+
+
