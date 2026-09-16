@@ -69,7 +69,6 @@ Este proyecto está diseñado para alojarse en el NAS Synology de Jesús (`pelot
 
 ## Directrices para futuros cambios
 
-1. **No mencionar a la IA:** Ningún texto visible en los archivos HTML o en la consola debe hacer referencia a que fue generado, sugerido o creado por Inteligencia Artificial.
-2. **Mantener la formalidad:** El tono del texto debe ser siempre profesional, directo y formal.
-3. **No alterar la declaración de Hobby:** El descargo de responsabilidad indicando que el trabajo de desarrollo de software no es comercial debe mantenerse prominentemente en la página principal.
+1. **Mantener la formalidad:** El tono del texto debe ser siempre profesional, directo y formal.
+2. **No alterar la declaración de Hobby:** El descargo de responsabilidad indicando que el trabajo de desarrollo de software no es comercial debe mantenerse prominentemente en la página principal.
 
