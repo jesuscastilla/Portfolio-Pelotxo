@@ -1,6 +1,6 @@
 # Contexto del Proyecto - Portfolio de Jesús Castilla
 
-Este archivo contiene el contexto necesario para agentes de Inteligencia Artificial que deban retomar, modificar o ampliar el trabajo en el portfolio de Jesús Castilla. 
+Este archivo contiene el contexto técnico necesario para retomar, modificar o ampliar el trabajo en el portfolio de Jesús Castilla sin pérdida de información.
 
 ---
 
@@ -31,7 +31,7 @@ Portfolio-Pelotxo/
 ├── index.html        # Página principal: Declaración de intenciones, listado de lenguajes y proyectos
 ├── contacto.html     # Página secundaria: Enlaces profesionales (LinkedIn, WhatsApp, GitHub) y formulario
 ├── styles.css        # Hoja de estilos global
-└── CONTEXT.md        # Documentación para IA (este archivo)
+└── CONTEXT.md        # Documentación técnica del proyecto (este archivo)
 ```
 
 ---
