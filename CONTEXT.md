@@ -8,19 +8,15 @@ Este archivo contiene el contexto técnico necesario para retomar, modificar o a
 
 El objetivo de este proyecto es servir como un portfolio / currículum vitae web formal para Jesús Castilla, documentando su perfil como **Desarrollador de Software**. 
 
-**Premisa crítica:**
-Queda explícitamente reflejado en la web que la programación es un **hobby y una vocación**. Todos los proyectos presentados se han desarrollado sin ánimo de lucro y no reportan ingresos económicos.
+**Premisa (2026-10-11):** el portfolio se reposiciona como **CV profesional** orientado a LinkedIn. Tono formal y enfoque en productos reales en producción. La marca personal es **DiploTech**.
 
 ---
 
 ## Arquitectura y Tecnologías
 
-- **Tipo de proyecto:** Web estática clásica (HTML5, CSS3, Vanilla JS si fuera necesario).
-- **Enfoque técnico:** Sin frameworks (cero dependencias, ni npm, ni compilación). Diseñado para máxima simplicidad, compatibilidad y facilidad de despliegue.
-- **Estilos (`styles.css`):**
-  - Estilo formal, sobrio y profesional, alineado con la identidad de Lebeche.
-  - Paleta: papel crema (`#F5F5F0`), tinta (`#141414`), acentos azul marino (`#041E2B`) y ámbar (`#E8A33D`). Tipografías Inter (cuerpo) y Playfair Display (títulos).
-  - Diseño totalmente *responsive* (Grid y Flexbox).
+- **Tipo de proyecto:** Web estática clásica (HTML5, CSS3, Vanilla JS). Sin frameworks, sin npm, sin build step.
+- **Enfoque técnico:** Máxima simplicidad, compatibilidad y facilidad de despliegue (GitHub Pages + NAS Synology).
+- **Identidad (2026-10-11):** rediseño profesional como CV para LinkedIn, con branding **DiploTech**. Paleta: papel cálido (`#F7F5EF`), tinta verde‑negro (`#1A231A`) y verde de marca (`#5F9A4B`). Tipografías **Fraunces** (títulos) y **Manrope** (cuerpo). Logo en `assets/` (transparente + versión blanca).
 
 ---
 
@@ -28,10 +24,13 @@ Queda explícitamente reflejado en la web que la programación es un **hobby y u
 
 ```text
 portfolio-pelotxo/
-├── index.html        # Página principal: Declaración de intenciones, listado de lenguajes y proyectos
-├── contacto.html     # Página secundaria: Enlaces profesionales (LinkedIn, WhatsApp, GitHub) y formulario
-├── styles.css        # Hoja de estilos global
-└── CONTEXT.md        # Documentación técnica del proyecto (este archivo)
+├── index.html        # Inicio (ES): héroe, sobre mí, stack, proyectos, CTA de contacto
+├── index-en.html     # Inicio (EN)
+├── contacto.html     # Contacto (ES): enlaces + formulario
+├── contacto-en.html  # Contacto (EN)
+├── styles.css        # Hoja de estilos global (rediseño 2026)
+├── assets/           # Logo DiploTech, favicon y apple-touch-icon
+└── CONTEXT.md        # Documentación técnica (este archivo)
 ```
 
 ---
@@ -70,5 +69,5 @@ Este proyecto está diseñado para alojarse en el NAS Synology de Jesús (`pelot
 ## Directrices para futuros cambios
 
 1. **Mantener la formalidad:** El tono del texto debe ser siempre profesional, directo y formal.
-2. **No alterar la declaración de Hobby:** El descargo de responsabilidad indicando que el trabajo de desarrollo de software no es comercial debe mantenerse prominentemente en la página principal.
+2. **Tono profesional:** el texto debe reflejar un perfil profesional de desarrollador (sin el antiguo descargo de «hobby no comercial»), manteniendo la autenticidad.
 
