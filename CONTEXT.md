@@ -27,7 +27,7 @@ Queda explícitamente reflejado en la web que la programación es un **hobby y u
 ## Estructura de Archivos
 
 ```text
-Portfolio-Pelotxo/
+portfolio-pelotxo/
 ├── index.html        # Página principal: Declaración de intenciones, listado de lenguajes y proyectos
 ├── contacto.html     # Página secundaria: Enlaces profesionales (LinkedIn, WhatsApp, GitHub) y formulario
 ├── styles.css        # Hoja de estilos global
@@ -61,7 +61,7 @@ Este proyecto está diseñado para alojarse en el NAS Synology de Jesús (`pelot
 
 ### Pasos de despliegue local manual (Red interna)
 1. Acceder al NAS a través de la red local mediante SMB: `\\192.168.50.94\web\` (o la ruta correspondiente al volumen web).
-2. Crear la carpeta `/Portfolio/` (o copiar la carpeta `Portfolio-Pelotxo` entera) dentro de la carpeta compartida web.
+2. Crear la carpeta `/Portfolio/` (o copiar la carpeta `portfolio-pelotxo` entera) dentro de la carpeta compartida web.
 3. Copiar el contenido (`index.html`, `contacto.html`, `styles.css`) en dicha carpeta.
 4. El servidor Web Station servirá directamente el contenido HTML a través de la IP local o del dominio en el subdirectorio correspondiente (p.ej. `https://www.corrientelebeche.es/portfolio/`).
 
